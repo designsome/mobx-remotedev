@@ -15,7 +15,8 @@
     "build:umd:min": "webpack src/index.js dist/mobx-remotedev.min.js --config webpack.config.production.js",
     "build": "npm run build:lib && npm run build:umd && npm run build:umd:min",
     "lint": "eslint src test",
-    "prepublish": "npm run lint && npm run clean && npm run build"
+    "prepublish": "npm run snyk-protect; npm run lint && npm run clean && npm run build",
+    "snyk-protect": "snyk protect"
   },
   "repository": {
     "type": "git",
@@ -72,6 +73,8 @@
   "dependencies": {
     "jsan": "^3.1.9",
     "remotedev": "^0.2.7",
-    "remotedev-utils": "^0.1.4"
-  }
+    "remotedev-utils": "^0.1.4",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
