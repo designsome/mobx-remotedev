@@ -20,8 +20,8 @@
     "mobx": "^2.3.3",
     "mobx-react": "^3.4.0",
     "mobx-remotedev": "^0.2.2",
-    "react": "^15.2.0",
-    "react-dom": "^15.2.0"
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
